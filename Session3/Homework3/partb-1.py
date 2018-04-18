@@ -33,8 +33,8 @@ colors = ['red', 'blue', 'brown', 'yellow', 'gray']
 #     lt(float(360/7))
 #     forward(120)
 
-for i in range(5):
-    color(colors[i])
+for i in range(10):
+    color(colors[i % 5]) #để màu sẽ chạy liên tục lặp đi lặp lại chuỗi màu đấy
     for j in range(i + 3):
         forward(120)
         lt(360/(i+3))
